@@ -1,0 +1,45 @@
+@use '_variables.scss' as v;
+@use '_mixins.scss' as m;
+@use '_placeholders.scss';
+
+
+.register{
+    padding: 50px 0 50px 0;
+    font-family: 'Quicksand' sans-serif;
+    @include m.d-flex(center, start, nowrap, row, 0, 0);
+
+    // &::placeholder {
+    //     @extend %placeholder; 
+    //     @include m.font(25px, 100, v.$color_white);
+    // }
+
+    &-wrapper{
+        width: 700px;
+        height: 830px;
+        border-radius: 50px;
+        background: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        box-shadow: -16px -16px 14px 1px rgba(#212020, .3);
+        padding: 70px 0 0 0;
+        @include m.d-flex(start, center, nowrap, column, 0, 40px);
+
+
+        &__title{
+                @include m.font(35px,500,v.$color_white);
+        }
+
+        &__content{
+            @include m.d-flex(center, center, nowrap, column, 10px, 37px);
+            
+            input,
+            select 
+            {
+                @extend %inputSecond; 
+            }
+            option {
+                background-color: pink;
+                color: #212020;
+            }
+        }
+    }
+}

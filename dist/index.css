@@ -27,6 +27,38 @@
   box-shadow: 0px 0px 60px 10px rgba(33, 32, 32, 0.6);
 }
 
+.register-wrapper__content input,
+.register-wrapper__content select {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  width: 500px;
+  height: 25px;
+  border-radius: 70px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
+  transition: 0.5s ease-in;
+}
+
+.register-wrapper__content input:hover,
+.register-wrapper__content select:hover {
+  background: linear-gradient(319deg, #2c3e50 0%, #303e51 3.54%, #363d53 7.66%, #3a3d54 10.9%, #3e3c56 14.34%, #423c57 17.99%, #463b59 21.27%, #4b3b5a 24.86%, #503b5c 28.83%, #543a5d 32.43%, #583a5f 35.72%, #5c3960 38.96%, #603961 42.29%, #653863 45.85%, #6a3865 49.13%, #6e3866 52.38%, #713767 55.9%, #743768 59.19%, #793769 62.36%, #7d366b 65.63%, #81366c 68.92%, #86356e 71.81%, #8a356f 74.99%, #8f3471 78.28%, #933472 81.76%, #963473 85.08%, #993374 88.28%, #9d3375 91.09%, #a13377 94.55%, #a83279 97.85%);
+  transition: 0.2s ease-in;
+  box-shadow: 0px 0px 60px 10px rgba(33, 32, 32, 0.6);
+}
+
+.register-wrapper__content input:focus,
+.register-wrapper__content select:focus {
+  background: linear-gradient(319deg, #2c3e50 0%, #303e51 3.54%, #363d53 7.66%, #3a3d54 10.9%, #3e3c56 14.34%, #423c57 17.99%, #463b59 21.27%, #4b3b5a 24.86%, #503b5c 28.83%, #543a5d 32.43%, #583a5f 35.72%, #5c3960 38.96%, #603961 42.29%, #653863 45.85%, #6a3865 49.13%, #6e3866 52.38%, #713767 55.9%, #743768 59.19%, #793769 62.36%, #7d366b 65.63%, #81366c 68.92%, #86356e 71.81%, #8a356f 74.99%, #8f3471 78.28%, #933472 81.76%, #963473 85.08%, #993374 88.28%, #9d3375 91.09%, #a13377 94.55%, #a83279 97.85%);
+  transition: 0.2s ease-in;
+  box-shadow: 0px 0px 60px 10px rgba(33, 32, 32, 0.6);
+}
+
 .login-menu__data-username::placeholder, .login-menu__data-password::placeholder, .login-menu__wrapper-btn::placeholder {
   position: absolute;
   top: 15px;
@@ -364,7 +396,55 @@ a {
   color: inherit;
 }
 
+.register {
+  padding: 50px 0 50px 0;
+  font-family: "Quicksand" sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 0;
+  row-gap: 0;
+}
+.register-wrapper {
+  width: 700px;
+  height: 830px;
+  border-radius: 50px;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  box-shadow: -16px -16px 14px 1px rgba(33, 32, 32, 0.3);
+  padding: 70px 0 0 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 0;
+  row-gap: 40px;
+}
+.register-wrapper__title {
+  font-size: 35px;
+  font-weight: 500;
+  font-style: normal;
+  color: #FFF;
+}
+.register-wrapper__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  column-gap: 10px;
+  row-gap: 37px;
+}
+.register-wrapper__content option {
+  background-color: pink;
+  color: #212020;
+}
+
 body {
+  margin: 0 auto;
   background: linear-gradient(108deg, #2c3e50 0%, #303e51 3.54%, #363d53 7.66%, #3a3d54 10.9%, #3e3c56 14.34%, #423c57 17.99%, #463b59 21.27%, #4b3b5a 24.86%, #503b5c 28.83%, #543a5d 32.43%, #583a5f 35.72%, #5c3960 38.96%, #603961 42.29%, #653863 45.85%, #6a3865 49.13%, #6e3866 52.38%, #713767 55.9%, #743768 59.19%, #793769 62.36%, #7d366b 65.63%, #81366c 68.92%, #86356e 71.81%, #8a356f 74.99%, #8f3471 78.28%, #933472 81.76%, #963473 85.08%, #993374 88.28%, #9d3375 91.09%, #a13377 94.55%, #a83279 97.85%);
 }
 

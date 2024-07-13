@@ -24,6 +24,29 @@
     transition:0.2s ease-in;
     box-shadow:0px 0px 60px 10px rgba(33, 32, 32, 0.6);
 }
+%inputSecond {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    width: 500px;
+    height: 25px;
+    border-radius: 70px;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    color:v.$color_white;
+    @include m.font(15px,400,v.$color_white);
+    transition:0.5s ease-in;
+}
+%inputSecond:hover{
+    background: v.$color_gradient-rev;
+    transition:0.2s ease-in;
+    box-shadow:0px 0px 60px 10px rgba(33, 32, 32, 0.6);
+}
+%inputSecond:focus    {
+    background: v.$color_gradient-rev;
+    transition:0.2s ease-in;
+    box-shadow:0px 0px 60px 10px rgba(33, 32, 32, 0.6);
+}
 
 %placeholder{
     &::placeholder {

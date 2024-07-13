@@ -2,5 +2,6 @@
 @use 'variables' as v;
 
 body {
+    margin: 0 auto;
 background: v.$color_gradient;
 }
