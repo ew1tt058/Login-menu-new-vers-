@@ -99,6 +99,31 @@
             @include m.font(20px, 400, v.$color_white);
         }
 } 
+
+@media (max-width: v.$media_s-min){
+    width: 350px;
+    height: 510px;
+    border-radius:50px ;
+    .login-menu__data-username,
+    .login-menu__data-password{
+            width: 300px;
+        }
+    .login-menu__wrapper-btn 
+    {
+        margin: 30px;
+    }
+    .login-menu__title{
+        padding: 25px 0 0 0 ; 
+    }
+    .login-menu__links{
+        row-gap: 7px;
+    }
+    .login-menu__links-reg, 
+    .login-menu__links-cant{
+        margin: 0;
+        @include m.font(20px, 400, v.$color_white);
+    }
+}
 }
 }
 
