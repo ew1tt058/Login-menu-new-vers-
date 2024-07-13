@@ -288,6 +288,82 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
 body {
   background: linear-gradient(108deg, #2c3e50 0%, #303e51 3.54%, #363d53 7.66%, #3a3d54 10.9%, #3e3c56 14.34%, #423c57 17.99%, #463b59 21.27%, #4b3b5a 24.86%, #503b5c 28.83%, #543a5d 32.43%, #583a5f 35.72%, #5c3960 38.96%, #603961 42.29%, #653863 45.85%, #6a3865 49.13%, #6e3866 52.38%, #713767 55.9%, #743768 59.19%, #793769 62.36%, #7d366b 65.63%, #81366c 68.92%, #86356e 71.81%, #8a356f 74.99%, #8f3471 78.28%, #933472 81.76%, #963473 85.08%, #993374 88.28%, #9d3375 91.09%, #a13377 94.55%, #a83279 97.85%);
 }
