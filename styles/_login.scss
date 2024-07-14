@@ -3,13 +3,14 @@
 @use '_placeholders.scss';
 
 .login {
-    padding: 60px 0 0 0;
+    padding: 50px 0 0 0;
+    align-items: center;
     font-family: 'Quicksand' sans-serif;
-    @include m.d-flex(center, start, nowrap, row, 0, 0);
+    @include m.d-flex(center, center, nowrap, row, 0, 0);
 
     &-menu {
-        width: 1070px;
-        height: 690px;
+        width: 1000px;
+        height: 680px;
         border-radius: 80px;
         background: v.$color_gradient;
         border: 1px solid rgba(0, 0, 0, 0.6);
@@ -23,107 +24,120 @@
         &__data {
             padding: 50px 0 0 0;
             @include m.d-flex(center, center, nowrap, column, 0, 40px);
+
             &-username,
             &-password {
-                @extend %input; 
-                
+                @extend %input;
+
                 &::placeholder {
-                    @extend %placeholder; 
+                    @extend %placeholder;
                     @include m.font(25px, 100, v.$color_white);
                 }
             }
 
         }
 
-        &__wrapper-btn{
+        &__wrapper-btn {
             @include m.font(25px, 100, v.$color_white);
-            @extend %placeholder; 
+            @extend %placeholder;
             @extend %btn;
         }
 
-        &__links{
+        &__links {
             @include m.font(25px, 600, v.$color_white);
-            @include m.d-flex(center, center, nowrap, column, 0,16px);
+            @include m.d-flex(center, center, nowrap, column, 0, 16px);
+
             &-reg,
-            &-cant{
-                @extend %links; 
+            &-cant {
+                @extend %links;
             }
         }
 
         @media (max-width: v.$media_xl) {
             max-width: 700px;
             border-radius: 90px;
-    }
-    @media (max-width: v.$media_md) {
-        width: 500px;
-        height: 600px;
-        border-radius:60px ;
-        .login-menu__title{
-            @include m.font(30px, 600, v.$color_white); 
         }
-        .login-menu__data-username,
-        .login-menu__data-password{
+
+        @media (max-width: v.$media_md) {
+            width: 500px;
+            height: 600px;
+            border-radius: 60px;
+
+            .login-menu__title {
+                @include m.font(30px, 600, v.$color_white);
+            }
+
+            .login-menu__data-username,
+            .login-menu__data-password {
+                width: 400px;
+            }
+
+            @include m.font(25px, 600, v.$color_white);
+            @include m.d-flex(center, center, nowrap, column, 10px, 0);
+        }
+
+        @media (max-width: v.$media_sm) {
             width: 400px;
+            height: 600px;
+            border-radius: 50px;
+
+            .login-menu__data-username,
+            .login-menu__data-password {
+                width: 350px;
+            }
+
+            .login-menu__links-reg,
+            .login-menu__links-cant {
+                @include m.font(20px, 400, v.$color_white);
+            }
         }
 
-        @include m.font(25px, 600, v.$color_white);
-        @include m.d-flex(center, center, nowrap, column, 10px, 0);
-}
+        @media (max-width: v.$media_min) {
+            width: 400px;
+            height: 510px;
+            border-radius: 50px;
 
-@media (max-width: v.$media_sm){
-        width: 400px;
-        height: 600px;
-        border-radius:50px ;
-        .login-menu__data-username,
-        .login-menu__data-password{
+            .login-menu__wrapper-btn {
+                margin: 30px;
+            }
+
+            .login-menu__title {
+                padding: 25px 0 0 0;
+            }
+
+            .login-menu__links-reg,
+            .login-menu__links-cant {
+                @include m.font(20px, 400, v.$color_white);
+            }
+        }
+
+        @media (max-width: v.$media_s-min) {
             width: 350px;
-        }
-        .login-menu__links-reg, 
-        .login-menu__links-cant{
-            @include m.font(20px, 400, v.$color_white);
-        }
-} 
-@media (max-width: v.$media_min){
-        width: 400px;
-        height: 510px;
-        border-radius:50px ;
-        .login-menu__wrapper-btn 
-        {
-            margin: 30px;
-        }
-        .login-menu__title{
-            padding: 25px 0 0 0 ; 
-        }
-        .login-menu__links-reg, 
-        .login-menu__links-cant{
-            @include m.font(20px, 400, v.$color_white);
-        }
-} 
+            height: 510px;
+            border-radius: 50px;
 
-@media (max-width: v.$media_s-min){
-    width: 350px;
-    height: 510px;
-    border-radius:50px ;
-    .login-menu__data-username,
-    .login-menu__data-password{
-            width: 300px;
-        }
-    .login-menu__wrapper-btn 
-    {
-        margin: 30px;
-    }
-    .login-menu__title{
-        padding: 25px 0 0 0 ; 
-    }
-    .login-menu__links{
-        row-gap: 7px;
-    }
-    .login-menu__links-reg, 
-    .login-menu__links-cant{
-        margin: 0;
-        @include m.font(20px, 400, v.$color_white);
-    }
-}
-}
-}
+            .login-menu__data-username,
+            .login-menu__data-password {
+                width: 300px;
+            }
 
+            .login-menu__wrapper-btn {
+                margin: 30px;
+            }
+
+            .login-menu__title {
+                padding: 25px 0 0 0;
+            }
+
+            .login-menu__links {
+                row-gap: 7px;
+            }
+
+            .login-menu__links-reg,
+            .login-menu__links-cant {
+                margin: 0;
+                @include m.font(20px, 400, v.$color_white);
+            }
+        }
+    }
+}

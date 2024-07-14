@@ -3,43 +3,142 @@
 @use '_placeholders.scss';
 
 
-.register{
+.register {
     padding: 50px 0 50px 0;
     font-family: 'Quicksand' sans-serif;
     @include m.d-flex(center, start, nowrap, row, 0, 0);
 
-    // &::placeholder {
-    //     @extend %placeholder; 
-    //     @include m.font(25px, 100, v.$color_white);
-    // }
-
-    &-wrapper{
+    &-wrapper {
         width: 700px;
         height: 830px;
+        padding: 70px 0 0 0;
         border-radius: 50px;
         background: transparent;
         border: 1px solid rgba(0, 0, 0, 0.6);
         box-shadow: -16px -16px 14px 1px rgba(#212020, .3);
-        padding: 70px 0 0 0;
         @include m.d-flex(start, center, nowrap, column, 0, 40px);
 
-
-        &__title{
-                @include m.font(35px,500,v.$color_white);
+        &__title {
+            @include m.font(35px, 500, v.$color_white);
         }
-
-        &__content{
-            @include m.d-flex(center, center, nowrap, column, 10px, 37px);
-            
+        
+        &__content {
+            @include m.d-flex(center, center, nowrap, column, 0, 25px);
             input,
-            select 
-            {
-                @extend %inputSecond; 
+            select {
+                @extend %inputSecond;
             }
+
+            &-birthday,
+            &-first,
+            &-last,
+            &-username,
+            &-email,
+            &-phone,
+            &-password {
+                &::placeholder {
+                    @extend %placeholderSecond;
+                }
+            }
+
             option {
                 background-color: pink;
                 color: #212020;
             }
+
+            &-btn{
+                margin: 0 auto;
+                width: 250px;
+                height: 45px;
+                @include m.font(25px, 100, v.$color_white);
+                @extend %btn;
+            }
+            &-links {
+                @include m.font(20px, 600, v.$color_white);
+                @include m.d-flex(center, center, nowrap, column, 0,16px);
+                @extend %links; 
+            
+            }
         }
     }
+    @media (max-width: v.$media_xl) {
+        &-wrapper{
+            width: 700px;
+            height: 750px;
+            padding: 40px 0 0 0;
+            max-width: 700px;
+            border-radius: 50px;   
+
+            &__content{
+                row-gap: 20px;
+            }
+        }
+}
+    @media (max-width: v.$media_md) {
+        &-wrapper{
+            width:400px;
+            height: 610px;
+            padding: 40px 0 0 0;
+            max-width: 700px;
+            border-radius: 50px;   
+            &__title {
+                @include m.font(25px, 500, v.$color_white);
+            }
+            &__content{
+                row-gap: 20px;
+                input,
+                select {
+                width: 300px;
+                height: 30px;
+                @include m.font(15px, 100, v.$color_white);
+            }
+            &-btn{
+                margin: 0 auto;
+                width: 160px;
+                height: 35px;
+                @include m.font(20px, 100, v.$color_white);
+                
+            }
+            &-links {
+                @include m.font(17px, 600, v.$color_white);
+            }
+            }
+        }
+}
+    @media (max-width: v.$media_md) {
+        &-wrapper{
+            width:400px;
+            height: 610px;
+            padding: 40px 0 0 0;
+            max-width: 700px;
+            border-radius: 50px;   
+            &__title {
+                @include m.font(25px, 500, v.$color_white);
+            }
+            &__content{
+                row-gap: 20px;
+                input,
+                select {
+                width: 300px;
+                height: 30px;
+                @include m.font(15px, 100, v.$color_white);
+            }
+            &-btn{
+                margin: 0 auto;
+                width: 160px;
+                height: 35px;
+                @include m.font(20px, 100, v.$color_white);
+                
+            }
+            &-links {
+                @include m.font(17px, 600, v.$color_white);
+            }
+            }
+        }
+}
+    @media (max-width: v.$media_min) {
+        &-wrapper{
+            width:370px;
+        }
+}
 }

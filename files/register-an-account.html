@@ -17,7 +17,7 @@
                 <h2 class="register-wrapper__title">Register an account
                 </h2>
             <div class="register-wrapper__content">
-                <select class="register-wrapper_content-country" required aria-label="Choice ur country">
+                <select class="register-wrapper__content-country" required aria-label="Choice ur country">
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
                     <option value="Algeria">Algeria</option>
@@ -214,21 +214,23 @@
                     <option value="Zambia">Zambia</option>
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
-                <input type="date" name="Birthday"  class="register-wrapper_content-birthday">
+                <input type="date" name="Birthday"  value="dd-mm-yyyy"  class="register-wrapper__content-birthday">
                 <input type="text" name="first name" placeholder="First name" required maxlength="35" autocomplete="off"
-                    label="First name"class="register-wrapper_content-first">
+                    label="First name"class="register-wrapper__content-first">
                 <input type="text" name="last name" placeholder="Last name" required maxlength="35" autocomplete="off"
-                    label="last name"class="register-wrapper_content-last">
+                    label="last name"class="register-wrapper__content-last">
                 <input type="text" name="username" placeholder="Username" required maxlength="35" autocomplete="off"
-                    label="Username"class="register-wrapper_content-username">
+                    label="Username"class="register-wrapper__content-username">
                 <input type="email" name="email" placeholder="Email" required maxlength="35" autocomplete="off"
-                    label="Email"class="register-wrapper_content-email">
+                    label="Email"class="register-wrapper__content-email">
                 <input type="tel" name="phone number" placeholder="Phone number" required maxlength="35" autocomplete="off pattern="[0-9]"
-                    label="Phone number"class="register-wrapper_content-phone">
+                    label="Phone number"class="register-wrapper__content-phone">
                 <input type="password" name="password" placeholder="Password" required maxlength="35" autocomplete="off"
-                    label="Password"class="register-wrapper_content-password">
-                <button class="register-wrapper_content-btn" type="submit">Submit</button>
-                <a href="/index.html">Do you have an account?</a>
+                    label="Password"class="register-wrapper__content-password">
+                <button class="register-wrapper__content-btn" type="submit">Submit</button>
+                <div class="register-wrapper__content-links">
+                    <a href="/index.html">Do you have an account?</a>
+                </div>
             </div>
         </div>
     </form>

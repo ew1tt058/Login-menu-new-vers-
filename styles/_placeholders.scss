@@ -24,17 +24,20 @@
     transition:0.2s ease-in;
     box-shadow:0px 0px 60px 10px rgba(33, 32, 32, 0.6);
 }
+
+
+
 %inputSecond {
     cursor: pointer;
     position: relative;
     text-align: center;
-    width: 500px;
-    height: 25px;
+    width: 600px;
+    height: 45px;
     border-radius: 70px;
     background: transparent;
     border: 1px solid rgba(0, 0, 0, 0.6);
     color:v.$color_white;
-    @include m.font(15px,400,v.$color_white);
+    @include m.font(20px,100,v.$color_white);
     transition:0.5s ease-in;
 }
 %inputSecond:hover{
@@ -47,6 +50,16 @@
     transition:0.2s ease-in;
     box-shadow:0px 0px 60px 10px rgba(33, 32, 32, 0.6);
 }
+%placeholderSecond{
+    &::placeholder {
+    position:relative;
+    text-align: center;
+    @include m.font(20px, 100, v.$color_white);
+}
+}
+
+
+
 
 %placeholder{
     &::placeholder {
@@ -62,7 +75,7 @@
 
 
 %btn {
-        margin: 60px;
+            margin: 60px;
             width: 250px;
             height: 65px;
             border-radius: 70px;
