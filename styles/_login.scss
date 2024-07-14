@@ -99,37 +99,6 @@
             @include m.font(20px, 400, v.$color_white);
         }
 } 
-
-@media (max-width: v.$media_s-min){
-    width: 350px;
-    height: 510px;
-    border-radius:50px ;
-    .login-menu__data{
-        row-gap: 10px;
-    }
-    .login-menu__data-username,
-    .login-menu__data-password{
-            width: 300px;
-        }
-    .login-menu__wrapper-btn 
-    {
-        @include m.font(15px, 400, v.$color_white);
-        width: 100px;
-        margin: 16px;
-        height: 40px;
-    }
-    .login-menu__title{
-        padding: 0; 
-    }
-    .login-menu__links{
-        row-gap: 7px;
-    }
-    .login-menu__links-reg, 
-    .login-menu__links-cant{
-        margin: 0;
-        @include m.font(20px, 400, v.$color_white);
-    }
-}
 }
 }
 
