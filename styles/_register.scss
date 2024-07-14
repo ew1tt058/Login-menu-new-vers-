@@ -4,9 +4,9 @@
 
 
 .register {
-    padding: 50px 0 50px 0;
-    font-family: 'Quicksand' sans-serif;
-    @include m.d-flex(center, start, nowrap, row, 0, 0);
+    margin: 0 auto;
+    height: 100vh;
+    @include m.d-flex(center, center, nowrap, column, 10px, 0);
 
     &-wrapper {
         width: 700px;
