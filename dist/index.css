@@ -118,21 +118,21 @@
 }
 
 .login {
-  padding: 60px 0 0 0;
-  font-family: "Quicksand" sans-serif;
+  margin: 0 auto;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   flex-wrap: nowrap;
-  flex-direction: row;
-  column-gap: 0;
+  flex-direction: column;
+  column-gap: 10px;
   row-gap: 0;
 }
 .login-menu {
   width: 1070px;
   height: 690px;
   border-radius: 80px;
-  background: linear-gradient(108deg, #2c3e50 0%, #303e51 3.54%, #363d53 7.66%, #3a3d54 10.9%, #3e3c56 14.34%, #423c57 17.99%, #463b59 21.27%, #4b3b5a 24.86%, #503b5c 28.83%, #543a5d 32.43%, #583a5f 35.72%, #5c3960 38.96%, #603961 42.29%, #653863 45.85%, #6a3865 49.13%, #6e3866 52.38%, #713767 55.9%, #743768 59.19%, #793769 62.36%, #7d366b 65.63%, #81366c 68.92%, #86356e 71.81%, #8a356f 74.99%, #8f3471 78.28%, #933472 81.76%, #963473 85.08%, #993374 88.28%, #9d3375 91.09%, #a13377 94.55%, #a83279 97.85%);
+  background: transparent;
   border: 1px solid rgba(0, 0, 0, 0.6);
   box-shadow: -16px -16px 14px 1px rgba(33, 32, 32, 0.3);
   display: flex;
@@ -415,14 +415,14 @@ a {
 }
 
 .register {
-  padding: 50px 0 50px 0;
-  font-family: "Quicksand" sans-serif;
+  margin: 0 auto;
+  height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   flex-wrap: nowrap;
-  flex-direction: row;
-  column-gap: 0;
+  flex-direction: column;
+  column-gap: 10px;
   row-gap: 0;
 }
 .register-wrapper {
