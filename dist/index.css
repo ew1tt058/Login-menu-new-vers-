@@ -221,15 +221,24 @@
     height: 510px;
     border-radius: 50px;
   }
+  .login-menu .login-menu__data {
+    row-gap: 10px;
+  }
   .login-menu .login-menu__data-username,
   .login-menu .login-menu__data-password {
     width: 300px;
   }
   .login-menu .login-menu__wrapper-btn {
-    margin: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFF;
+    width: 100px;
+    margin: 16px;
+    height: 40px;
   }
   .login-menu .login-menu__title {
-    padding: 25px 0 0 0;
+    padding: 0;
   }
   .login-menu .login-menu__links {
     row-gap: 7px;
