@@ -118,20 +118,19 @@
 }
 
 .login {
-  padding: 50px 0 0 0;
-  align-items: center;
+  padding: 60px 0 0 0;
   font-family: "Quicksand" sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-wrap: nowrap;
   flex-direction: row;
   column-gap: 0;
   row-gap: 0;
 }
 .login-menu {
-  width: 1000px;
-  height: 680px;
+  width: 1070px;
+  height: 690px;
   border-radius: 80px;
   background: linear-gradient(108deg, #2c3e50 0%, #303e51 3.54%, #363d53 7.66%, #3a3d54 10.9%, #3e3c56 14.34%, #423c57 17.99%, #463b59 21.27%, #4b3b5a 24.86%, #503b5c 28.83%, #543a5d 32.43%, #583a5f 35.72%, #5c3960 38.96%, #603961 42.29%, #653863 45.85%, #6a3865 49.13%, #6e3866 52.38%, #713767 55.9%, #743768 59.19%, #793769 62.36%, #7d366b 65.63%, #81366c 68.92%, #86356e 71.81%, #8a356f 74.99%, #8f3471 78.28%, #933472 81.76%, #963473 85.08%, #993374 88.28%, #9d3375 91.09%, #a13377 94.55%, #a83279 97.85%);
   border: 1px solid rgba(0, 0, 0, 0.6);
@@ -251,34 +250,6 @@
   }
   .login-menu .login-menu__links-reg,
   .login-menu .login-menu__links-cant {
-    font-size: 20px;
-    font-weight: 400;
-    font-style: normal;
-    color: #FFF;
-  }
-}
-@media (max-width: 403px) {
-  .login-menu {
-    width: 350px;
-    height: 510px;
-    border-radius: 50px;
-  }
-  .login-menu .login-menu__data-username,
-  .login-menu .login-menu__data-password {
-    width: 300px;
-  }
-  .login-menu .login-menu__wrapper-btn {
-    margin: 30px;
-  }
-  .login-menu .login-menu__title {
-    padding: 25px 0 0 0;
-  }
-  .login-menu .login-menu__links {
-    row-gap: 7px;
-  }
-  .login-menu .login-menu__links-reg,
-  .login-menu .login-menu__links-cant {
-    margin: 0;
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
