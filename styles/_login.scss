@@ -3,15 +3,15 @@
 @use '_placeholders.scss';
 
 .login {
-    padding: 60px 0 0 0;
-    font-family: 'Quicksand' sans-serif;
-    @include m.d-flex(center, start, nowrap, row, 0, 0);
+    margin: 0 auto;
+    height: 100vh;
+    @include m.d-flex(center, center, nowrap, column, 10px, 0);
 
     &-menu {
         width: 1070px;
         height: 690px;
         border-radius: 80px;
-        background: v.$color_gradient;
+        background: transparent;
         border: 1px solid rgba(0, 0, 0, 0.6);
         box-shadow: -16px -16px 14px 1px rgba(#212020, .3);
         @include m.d-flex(center, center, nowrap, column, 10px, 0);
